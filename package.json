@@ -6,7 +6,7 @@
   "dependencies": {
     "fs-extra": "~0.6.X",
     "md5-file": "^3.1.1",
-    "restify": "~2.X.X"
+    "restify": "^4.3.0",
   },
   "repository": {
     "type": "git",
