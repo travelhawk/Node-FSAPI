@@ -1,33 +1,5 @@
 // Define Configuration
-
-var config = {
-    // Authentication keys
-    keys: [
-        "12345",
-        "67890"
-    ],
-    /**
-     * Allowed IP's or ranges
-     * Can use * for wildcards, *.*.*.* for no restrictions
-     */
-    ips: [
-        "*.*.*.*"
-    ],
-    /**
-     * SSL Config
-     * Set key and cert to absolute path if SSL used, false if not
-     */
-    ssl: {
-        key: false,
-        cert: false
-    },
-    // Port designation
-    port: 8080,
-    // Base directory
-    base: "/tmp",
-    // Default create mode
-    cmode: "0755"
-};
+var config = require('config');
 
 
 var fs = require("fs-extra"),
