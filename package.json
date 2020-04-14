@@ -4,10 +4,10 @@
   "private": true,
   "description": "A RESTful FileSystem API for NodeJS ",
   "dependencies": {
-    "fs-extra": "~0.6.X",
-    "md5-file": "^3.1.1",
-    "restify": "^4.3.0",
-    "config": "^1.30.0"
+    "fs-extra": "~9.0",
+    "md5-file": "^5.0.0",
+    "restify": "^8.5.1",
+    "config": "^3.3.1"
   },
   "repository": {
     "type": "git",

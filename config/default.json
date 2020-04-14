@@ -1,6 +1,6 @@
 {
-    // Authentication keys
-    keys: [],
+    // Authentication key
+    keys: ["12345"],
     /**
      * Allowed IP's or ranges
      * Can use * for wildcards, *.*.*.* for no restrictions
@@ -17,7 +17,7 @@
         cert: false
     },
     // Port designation
-    port: 8080,
+    port: 5555,
     // Base directory
     base: "/baseDir",
     // Default create mode

@@ -33,14 +33,14 @@ if (config.ssl.key && config.ssl.cert) {
 }
 
 // Additional server config
-server.use(restify.acceptParser(server.acceptable));
-server.use(restify.queryParser());
-server.use(restify.bodyParser());
-server.use(restify.CORS());
+server.use(restify.plugins.acceptParser(server.acceptable));
+server.use(restify.plugins.queryParser());
+server.use(restify.plugins.bodyParser());
+//server.use(restify.CORS());
 
 // Regular Expressions
-var commandRegEx = /^\/([a-zA-Z0-9_\.~-]+)\/([a-zA-Z0-9_\.~-]+)\/(.*)/,  // /{key}/{command}/{path}
-    pathRegEx = /^\/([a-zA-Z0-9_\.~-]+)\/(.*)/;  // /{key}/{path}
+var commandRegEx = '/(^([a-zA-Z0-9_\.~-]+)\/([a-zA-Z0-9_\.~-]+)\/(.*))',  // /{key}/{command}/{path}
+    pathRegEx = '/(^([a-zA-Z0-9_\.~-]+)\/(.*)/)';  // /{key}/{path}
 
 
 /**
