@@ -19,7 +19,7 @@
     // Port designation
     port: 5555,
     // Base directory
-    base: "/baseDir",
+    base: "files",
     // Default create mode
     cmode: "0755"
 }
